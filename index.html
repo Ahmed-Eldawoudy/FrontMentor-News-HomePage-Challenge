@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon.ico"
+    />
+    <title>Frontend Mentor | News homepage</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="body">
+    <!-- Navigation Start -->
+    <nav class="nav">
+      <img src="./assets/images/logo.svg" alt="page logo" class="nav__logo" />
+      <ul class="nav__links responsive">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+      </ul>
+      <img
+        src="./assets/images/icon-menu.svg"
+        alt="open side navigation icon"
+        class="nav__open-icon"
+        onclick="openNav()"
+      />
+    </nav>
+    <!-- start side nav -->
+    <div class="side-nav" id="side-nav">
+      <div class="side-nav__transparent-side" onclick="closeNav()"></div>
+      <div class="side-nav__links-side">
+        <div class="side-nav__close-icon">
+          <img
+            src="./assets/images/icon-menu-close.svg"
+            alt="close side navigation icon"
+            onclick="closeNav()"
+          />
+        </div>
+        <ul class="side-nav__links">
+          <li><a href="#" onclick="closeNav()">Home</a></li>
+          <li><a href="#" onclick="closeNav()">New</a></li>
+          <li><a href="#" onclick="closeNav()">Popular</a></li>
+          <li><a href="#" onclick="closeNav()">Trending</a></li>
+          <li><a href="#" onclick="closeNav()">Categories</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- start side nav -->
+    <!-- Navigation End -->
+    <!-- ------------------- -->
+    <!-- Main Start -->
+    <main>
+      <!-- Start Hero -->
+      <article class="hero">
+        <section class="hero__image-container">
+          <img
+            src="./assets/images/image-web-3-mobile.jpg"
+            alt="web-3"
+            class="hero__image_mobile"
+          />
+          <img
+            src="./assets/images/image-web-3-desktop.jpg"
+            alt="web-3"
+            class="hero__image_desktop"
+          />
+        </section>
+        <section class="hero__heading">
+          <h1>The Bright Future of Web 3.0?</h1>
+        </section>
+        <section class="hero__paragraph-and-button-container">
+          <p class="hero__paragraph">
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <button class="orange-button">Read More</button>
+        </section>
+      </article>
+      <!-- End Hero -->
+      <!-- ------------------- -->
+      <!-- Start New -->
+      <aside class="new-puplish">
+        <h2 class="new-puplish__heading">New</h2>
+        <section class="new-puplish__subject">
+          <h3>Hydrogen VS Electric Cars</h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </section>
+        <section class="new-puplish__subject">
+          <h3>The Downsides of AI Artistry</h3>
+          <p>
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </section>
+        <section class="new-puplish__subject">
+          <h3>Is VC Funding Drying Up?</h3>
+          <p>
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </section>
+      </aside>
+      <!-- End New -->
+      <!-- ------------------- -->
+      <!-- Start Suggestions -->
+      <article class="suggestions">
+        <section class="suggestions__block">
+          <img
+            src="./assets/images/image-retro-pcs.jpg"
+            alt="retro"
+            class="suggestions__image"
+          />
+          <div class="suggestion__content">
+            <h3>01</h3>
+            <h4>Reviving Retro PCs</h4>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </section>
+        <!-- ------------------- -->
+        <section class="suggestions__block">
+          <img
+            src="./assets/images/image-top-laptops.jpg"
+            alt="keyboard"
+            class="suggestions__image"
+          />
+          <div class="suggestion__content">
+            <h3>02</h3>
+            <h4>Top 10 Laptops of 2022</h4>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </section>
+        <!-- ------------------- -->
+        <section class="suggestions__block">
+          <img
+            src="./assets/images/image-gaming-growth.jpg"
+            alt="retro"
+            class="suggestions__image"
+          />
+          <div class="suggestion__content">
+            <h3>03</h3>
+            <h4>The Growth of Gaming</h4>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </section>
+      </article>
+      <!-- End Suggestions -->
+    </main>
+    <!-- Main End -->
+    <!-- Script for side navigation -->
+    <script>
+      function openNav() {
+        document.getElementById("side-nav").style.marginRight = "0";
+        document.getElementById("body").style.overflow = "hidden";
+      }
+
+      function closeNav() {
+        document.getElementById("side-nav").style.marginRight = "150vw";
+        document.getElementById("body").style.overflow = "scroll";
+      }
+    </script>
+  </body>
+</html>
