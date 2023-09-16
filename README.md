@@ -4,7 +4,7 @@ This is a solution to the FrontMentor News Homepage Challenge created using HTML
 
 ## Description
 
-This website is a news homepage that displays various sections such as top stories, latest news, etc. You can click on any of the articles to read more.
+This website is a news homepage that displays various sections such as top stories, latest news, etc.
 
 ## Technologies Used
 
